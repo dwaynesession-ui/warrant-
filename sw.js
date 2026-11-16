@@ -1,21 +1,21 @@
 /* Warrant service worker — caches the app shell so it runs fully offline.
  * Bump CACHE when you change any file so devices pick up the new version. */
-const CACHE = 'warrant-v1.0.0';
+const CACHE = 'warrant-v1.0.1';
 const ASSETS = [
   './',
   './index.html',
-  './css/styles.css',
-  './js/logic.js',
-  './js/analyzer.js',
-  './js/templates.js',
-  './js/store.js',
-  './js/app.js',
+  './styles.css',
+  './logic.js',
+  './analyzer.js',
+  './templates.js',
+  './store.js',
+  './app.js',
   './manifest.webmanifest',
-  './icons/icon.svg',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png',
-  './icons/apple-touch-icon.png'
+  './icon.svg',
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png',
+  './apple-touch-icon.png'
 ];
 
 self.addEventListener('install', (e) => {
